@@ -18,6 +18,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // CORS (make this env-driven in prod)
 const FRONTEND_ORIGIN = process.env.FRONTEND_ORIGIN || "http://localhost:5173";
+
 app.use(express.json());
 app.use(cors({ origin: FRONTEND_ORIGIN }));
 
