@@ -1,31 +1,19 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "main": "backend/server.js",
- 
-  "type": "module",
   "scripts": {
-  "dev": "nodemon backend/server.js",
-  "start": "node backend/server.js",
-  "build": "npm install --prefix frontend && npm run build --prefix frontend"
-}
-,
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+    "dev": "nodemon backend/server.js",
+    "start": "node backend/server.js",
+    "build": "npm install --prefix frontend && npm run build --prefix frontend",
+    "install:all": "npm install && npm install --prefix frontend"
+  },
   "dependencies": {
-    "@google/generative-ai": "^0.24.1",
+    "express": "^5.1.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
-    "express": "^5.1.0",
     "multer": "^2.0.2",
+    "nodemon": "^3.1.10",
     "pdf2json": "^3.2.0",
     "pg": "^8.16.3",
-     "tesseract.js": "^6.0.1"
-    
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.10"
+    "tesseract.js": "^6.0.1",
+    "@google/generative-ai": "^0.24.1"
   }
 }
